@@ -18,7 +18,10 @@
     }
   },
   "lint-staged": {
-    "*.+(js|jsx)": ["eslint --fix", "git add"]
+    "*.+(js|jsx)": [
+      "eslint --fix",
+      "git add"
+    ]
   },
   "author": "Sandeep Raveesh",
   "license": "ISC",
@@ -34,6 +37,7 @@
     "@babel/plugin-proposal-class-properties": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^9.4.0",
     "babel-eslint": "^10.0.0",
     "babel-loader": "^8.0.0",
     "clean-webpack-plugin": "^1.0.0",
