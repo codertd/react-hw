@@ -17,7 +17,7 @@ const routing = (
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/users">Users</Link>
+          <Link to="/users/2">Users</Link>
         </li>
         <li>
           <Link to="/contact">Contact</Link>
@@ -25,7 +25,7 @@ const routing = (
       </ul>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route path="/users" component={Users} />
+        <Route path="/users/:id" component={Users} />
         <Route path="/contact" component={Contact} />
         <Route component={NotFound} />
       </Switch>
