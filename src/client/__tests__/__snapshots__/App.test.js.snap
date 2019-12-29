@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders 1`] = `
+<DocumentFragment>
+  <div>
+    <h1>
+      Loading.. please wait!
+    </h1>
+    <img
+      alt="react"
+      src="[object Object]"
+    />
+  </div>
+</DocumentFragment>
+`;
