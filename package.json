@@ -11,7 +11,8 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "test": "jest -c jest.config.js --watch"
+    "test": "jest -c jest.config.js --watch",
+    "testAll": "jest -c jest.config.js"
   },
   "husky": {
     "hooks": {
