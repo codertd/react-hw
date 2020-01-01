@@ -15,3 +15,7 @@ Jest has been configured to mock css and binary assets.  SetupTests.js is perfor
 
 ### Eslint
 Husky has been setup in package.json to lint on a commit.  Lint also run in the pipeline.
+
+
+### Dockerize
+The Dockerfile uses a multi-stage build to setup and build, then copy the production code into place for execution.
