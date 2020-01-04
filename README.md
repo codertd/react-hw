@@ -20,11 +20,11 @@ Husky has been setup in package.json to lint on a commit.  Lint also run in the 
 ### Dockerize
 The Dockerfile uses a multi-stage build to setup and build, then copy the production code into place for execution.
 
-# To build (with a Dockerfile.dev, for example)
-# docker build -f Dockerfile.dev -t sample:dev .
+To build (with a Dockerfile.dev, for example)
+docker build -f Dockerfile.dev -t sample:dev .
 
-# To Spin up and exec a shell to inspect the FS
-# docker run -it sample:dev sh
+To Spin up and exec a shell to inspect the FS
+docker run -it sample:dev sh
 
-# To spin it up and test it.
-# docker run -p 5000:5000 sample:dev
+To spin it up and test it.
+docker run -p 5000:5000 sample:dev
