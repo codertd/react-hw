@@ -41,15 +41,3 @@ EXPOSE 5000
 # Note there are three args in this array to match whats in package.json.
 CMD [ "npm", "run", "prod" ]
 
-
-###
-# Misc commands while developing
-
-# To build (with a Dockerfile.dev named Dockerfile, for example)
-# docker build -f Dockerfile -t sample:dev .
-
-# To Spin up and exec a shell to inspect the FS
-# docker run -it sample:dev sh
-
-# To spin it up and test it.
-# docker run -p 5000:5000 sample:dev
