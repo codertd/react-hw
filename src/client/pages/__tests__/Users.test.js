@@ -11,7 +11,7 @@ it('renders', () => {
   expect(asFragment()).toMatchSnapshot();
 
   expect(getByTestId('h1tag')).toHaveTextContent('Hello!');
-  expect(getByText('Hello!')).toHaveClass('fancy-h1');
+  expect(getByText('Hello!')).toHaveClass('fancy-h12');
 });
 
 // test('Component Renders', () => {
