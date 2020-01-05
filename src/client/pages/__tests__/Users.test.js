@@ -7,8 +7,11 @@ import {
 import Users from '../Users';
 
 it('renders', () => {
-  const { asFragment } = render(<Users text="Hello!" />);
+  const { asFragment, getByTestId, getByText } = render(<Users text="Hello!" />);
   expect(asFragment()).toMatchSnapshot();
+
+  expect(getByTestId('h1tag')).toHaveTextContent('Hello!');
+  expect(getByText('Hello!')).toHaveClass('fancy-h1');
 });
 
 // test('Component Renders', () => {

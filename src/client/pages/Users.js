@@ -1,10 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-class Users extends React.PureComponent {
-  render() {
-    console.log(this.props);
-    return <h1>Users</h1>;
-  }
-}
+
+const Users = (props) => {
+  const { text } = props;
+  return (
+    <users>
+      <h1 data-testid="h1tag" className="fancy-h1">
+        {text}
+      </h1>
+    </users>
+  );
+};
+
+Users.propTypes = {
+  text: PropTypes.string.isRequired,
+};
 
 export default Users;

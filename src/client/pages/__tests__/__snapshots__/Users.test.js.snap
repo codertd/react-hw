@@ -2,8 +2,13 @@
 
 exports[`renders 1`] = `
 <DocumentFragment>
-  <h1>
-    Users
-  </h1>
+  <users>
+    <h1
+      class="fancy-h1"
+      data-testid="h1tag"
+    >
+      Hello!
+    </h1>
+  </users>
 </DocumentFragment>
 `;
